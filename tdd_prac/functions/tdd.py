@@ -9,7 +9,7 @@ def sum_of_even(nums):
             answer += number
     return answer
 
-print(sum_of_even([9,5]))
+# print(sum_of_even([9,5]))
 
 def calculate_mediam(nums):
     # pass
@@ -37,5 +37,30 @@ def remove_duplicates(str):
             continue
     return new_str
 
-print(remove_duplicates("LeSEtja"))
-# print(calculate_mediam([3,1,4,5,6,3,5]))
+def find_missing_number(nums):
+
+    if 1 not in nums:
+        return 1
+    
+    for num in nums:
+        if num != (nums.index(num) +1):
+            num -= 1
+            break
+        else:
+            continue
+    return num
+
+
+print(find_missing_number([6,5,3,7,2,1]))
+
+def first_non_repeating_char(word):
+
+    for char in word:
+        if word.count(char) > 1:
+            continue
+        else:
+            break
+
+    return char
+
+print(first_non_repeating_char("levelar"))
