@@ -17,10 +17,10 @@ class test_SumofEven(unittest.TestCase):
         self.assertEqual(tdd.calculate_mediam([1,2,3,4,5]), 3) #odd length of numbers
 
     def test_Missing_number(self):
-        self.assertEqual(tdd.first_non_repeating_char([]), None)
-        self.assertEqual(tdd.first_non_repeating_char([2]), 1)
-        self.assertEqual(tdd.first_non_repeating_char([2,3,4,5]), 1)
-        self.assertEqual(tdd.first_non_repeating_char([5,6,3,7,2,1]), 4)
+        self.assertEqual(tdd.find_missing_number([]), None)
+        self.assertEqual(tdd.find_missing_number([2]), 1)
+        self.assertEqual(tdd.find_missing_number([2,3,4,5]), 1)
+        self.assertEqual(tdd.find_missing_number([5,6,3,7,2,1]), 4)
 
     def test_duplicates(self):
         self.assertEqual(tdd.remove_duplicates(""), "")
@@ -30,11 +30,10 @@ class test_SumofEven(unittest.TestCase):
 
 
     def test_first_non_repeat(self):
-        self.assertEqual(tdd.first_non_repeat(""), None)
-        self.assertEqual(tdd.first_non_repeat("aaaaaaaaa"), None)
-        self.assertEqual(tdd.first_non_repeat("pineapple"), "i")
-        self.assertEqual(tdd.first_non_repeat("e"), "e")
-
+        self.assertEqual(tdd.first_non_repeating_char(""), None)
+        self.assertEqual(tdd.first_non_repeating_char("aaaaaaaaa"), None)
+        self.assertEqual(tdd.first_non_repeating_char("pineapple"), "i")
+        self.assertEqual(tdd.first_non_repeating_char("e"), "e")
 
 
 if __name__ == "__main__":

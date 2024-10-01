@@ -1,18 +1,16 @@
-"functions file"
 
 def sum_of_even(nums):
     answer = 0
     for number in nums:
 
         if number%2 == 0:
-
             answer += number
+
     return answer
 
 # print(sum_of_even([9,5]))
 
 def calculate_mediam(nums):
-    # pass
     if len(nums) == 0:
         return None
     elif len(nums)%2 != 0:
@@ -26,7 +24,21 @@ def calculate_mediam(nums):
         position2 = int(position2)
         value = (nums[position1] + nums[position2])/2
         return value
+# print(calculate_mediam([1,2,3,4,5,6]))    
+
+def find_missing_number(nums):
+
+    nums.sort()
     
+    for x in nums:
+        if x == (nums.index(x) +1):
+            continue
+        else:
+            x -= 1
+            return x
+            
+# print(find_missing_number([3]))
+
 def remove_duplicates(str):
 
     new_str = ""
@@ -36,31 +48,14 @@ def remove_duplicates(str):
         else:
             continue
     return new_str
+# print(remove_duplicates("programming"))
 
-def find_missing_number(nums):
+def first_non_repeating_char(str):
 
-    if 1 not in nums:
-        return 1
-    
-    for num in nums:
-        if num != (nums.index(num) +1):
-            num -= 1
-            break
-        else:
-            continue
-    return num
-
-
-print(find_missing_number([6,5,3,7,2,1]))
-
-def first_non_repeating_char(word):
-
-    for char in word:
-        if word.count(char) > 1:
+    for char in str:
+        if str.count(char) > 1:
             continue
         else:
-            break
+            return char
 
-    return char
-
-print(first_non_repeating_char("levelar"))
+# print(first_non_repeating_char("pineapple"))
