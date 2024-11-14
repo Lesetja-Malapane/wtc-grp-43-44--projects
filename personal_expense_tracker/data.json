@@ -11,31 +11,17 @@
   "Lesetja": [
     {
       "Item_number": 0,
-      "Expense": "2",
-      "Description": "2",
-      "Category": "Entertainment",
-      "Date": "2"
+      "Expense": "hjgfads",
+      "Description": "ahsfjd",
+      "Category": "Food",
+      "Date": "127643812"
     },
     {
       "Item_number": 1,
-      "Expense": "2",
-      "Description": "2",
+      "Expense": "jhguig",
+      "Description": "uyfuyfgyu",
       "Category": "Entertainment",
-      "Date": "2"
-    },
-    {
-      "Item_number": 2,
-      "Expense": "2",
-      "Description": "2",
-      "Category": "Entertainment",
-      "Date": "2"
-    },
-    {
-      "Item_number": 3,
-      "Expense": "2",
-      "Description": "2",
-      "Category": "Entertainment",
-      "Date": "23"
+      "Date": "1234234"
     }
   ]
 }
